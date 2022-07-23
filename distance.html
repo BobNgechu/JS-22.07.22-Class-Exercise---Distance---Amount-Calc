@@ -13,10 +13,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="col_md_10 offset_md_1">
-        <h3>Traveling Price Chart</h3>
-        <div class="Chart">
-          <table class="">
+      <h3>Travellers Price Chart</h3>
+      <div class="container-fluid border">        
+        <div class="priceList">
+          <table class="table">
             <tr>
               <th>Distance Covered (Kms)</th>
               <th>Amount in (KSh.)</th>
@@ -52,11 +52,12 @@
               <td><h6>Not applicable</h6></td>
             </tr>
           </table>
+      </div>
         </div>
       </div>
 
-      <div class="col_md_12">
-        <h3>Travellers Calculator</h3>
+      <div class="container">
+        <h3><br>Travellers Calculator</h3>
         <div class="calc">
           <div class="persons">
             <div class="personsLabel">
@@ -70,7 +71,7 @@
           <div class="distance">
             <div class="distanceLabel">
               <label for="distance">
-                <h5>Enter The distance you wish to cover:</h5></label
+                <h5>Enter the distance to be covered:</h5></label
               >
             </div>
             <div class="distanceInput">
@@ -78,11 +79,15 @@
             </div>
           </div>
         </div>
-        <div class="result">
+        <div class="container">
+          <div class="priceBtn">
           <button onclick="result()" id="amountButton">
             Total Amount Payable
           </button>
-          <input type="text" id="amountInput" />
+        </div>
+        <div class="resultInput">
+          <input type="text" id="amountInput" /> <br>
+        </div>
         </div>
       </div>
     </div>
